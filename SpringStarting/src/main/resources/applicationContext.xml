@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:beans="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--  //подключаем АННОТАЦИИ для вайла "SpringCourse"-->
+    <context:component-scan base-package="SpringCourse"/>
+
+    <!--    //добавление файла -->
+   <!-- <context:property-placeholder location="classpath:musicPlayer.properties"/>
+
+    <bean id="musicBean"
+          class="SpringCourse.PopMusic" factory-method="PopMusic">
+    </bean>
+
+    <bean id="Classical" class="SpringCourse.ClassicalMusic"></bean>
+    <bean id="Pop" class="SpringCourse.PopMusic"></bean>
+    <bean id="Rock" class="SpringCourse.RockMusic"></bean>
+
+    <bean id="musicPlayer" class="SpringCourse.MusicPlayer" scope="prototype">
+        <property name="musicList">
+            <list>
+                <ref bean="Classical"/>
+                <ref bean="Pop"/>
+                <ref bean="Rock"/>
+            </list>
+        </property>
+        <property name="name" value="${musicPlayer.name}"/>
+        <property name="volume" value="${musicPlayer.volume}"/>
+    </bean>-->
+
+</beans>
